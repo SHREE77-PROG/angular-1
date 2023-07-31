@@ -5,25 +5,24 @@
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <form>
+
+    <form #userSubmit="ngForm" (ngSubmit) ="onSubmit(userSubmit.value)">
       <div class="form-group">
-        
-        Name:<input type="text" class="formcontrol" placeholder="Fullname">
+
+        Name:<input type="text" name="name"  class="formcontrol" placeholder="Fullname" ngModel>
       </div>
       <div class="form-group">
-        Address:<input type="text" class="formcontrol" placeholder="Address">
+        Address:<input type="text" name="address" class="formcontrol" placeholder="Address" ngModel>
       </div>
       <div class="form-group">
-        Password:<input type="password" class="formcontrol" placeholder="password">
+        Password:<input type="password" name="password" class="formcontrol" placeholder="password" ngModel>
       </div>
       <div class="form-group">
-        Email:<input type="text" class="formcontrol" placeholder="Email">
+        Email:<input type="text" name="email" class="formcontrol" placeholder="Email" ngModel>
       </div>
       <div class="form-group">
-        <button type="button" class="btn btn-info">Submit</button>
+        <button type="submit"  class="btn btn-info" >Submit</button>
       </div>
     </form>
   </div>
 </section>
-
-

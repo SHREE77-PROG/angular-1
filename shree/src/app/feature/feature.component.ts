@@ -7,9 +7,10 @@ import { Component} from '@angular/core';
   styleUrls: ['./feature.component.css']
 })
 export class FeatureComponent {
-  Submit(){
-        
-     console.log('Form Submitted');
+
+  
+  onSubmit(userForm:object){
+     console.log(userForm);
   }
 }
 
